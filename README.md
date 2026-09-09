@@ -70,10 +70,10 @@ const pair = await getRate('USD', 'LKR', { apiKey: 'art_live_...' });
 {
   bank: 'cbsl',
   name: 'Central Bank of Sri Lanka',
-  rate_date: '2026-08-11',   // Central Bank of Sri Lanka's own publication date
+  rate_date: '2026-09-09',   // Central Bank of Sri Lanka's own publication date
   source: 'USD',
   target: 'LKR',
-  rate: 335.2033,
+  rate: 328.7701,
   rate_type: 'indicative',
   derived: false,
   method: 'published',
@@ -98,9 +98,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'cbsl',
   name: 'Central Bank of Sri Lanka',
-  rate_date: '2026-08-11',
+  rate_date: '2026-09-09',
   rates: [
-    { "base": "USD", "quote": "LKR", "type": "indicative", "value": 335.2033 },
+    { "base": "USD", "quote": "LKR", "type": "indicative", "value": 328.7701 },
     // … the rest of the published table (55 currencies vs LKR)
   ],
   disclaimer: '…'
@@ -140,7 +140,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'cbsl-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'LKR', from: '2026-01-01', to: '2026-08-11' },
+  { source: 'USD', target: 'LKR', from: '2026-01-01', to: '2026-09-09' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -153,11 +153,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'LKR',
   from: '2026-01-01',
-  to: '2026-08-11',
+  to: '2026-09-09',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-08-11', rate: 335.2033, rate_type: 'indicative', derived: false, method: 'published' },
+    { date: '2026-09-09', rate: 328.7701, rate_type: 'indicative', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -170,9 +170,9 @@ Pass `{ symbol: 'USD' }` instead of `source`/`target` to get the raw published r
 
 ## 🗺️ Currencies covered
 
-Central Bank of Sri Lanka currently publishes rates covering **56 currencies** (as of the latest table):
+Central Bank of Sri Lanka currently publishes rates covering **55 currencies** against the LKR (as of the latest table):
 
-`AED` · `AUD` · `BDT` · `BHD` · `BND` · `BRL` · `CAD` · `CHF` · `CNH` · `CNY` · `CZK` · `DKK` · `EGP` · `EUR` · `GBP` · `GHS` · `HKD` · `HUF` · `IDR` · `INR` · `IRR` · `JOD` · `JPY` · `KES` · `KRW` · `KWD` · `LKR` · `MMK` · `MOP` · `MUR` · `MVR` · `MYR` · `NGN` · `NOK` · `NPR` · `NZD` · `OMR` · `PGK` · `PHP` · `PKR` · `PLN` · `QAR` · `RON` · `RUB` · `SAR` · `SBD` · `SCR` · `SEK` · `SGD` · `THB` · `TWD` · `USD` · `VND` · `XAU` · `ZAR` · `ZMW`
+🇦🇪 `AED` · 🇦🇺 `AUD` · 🇧🇩 `BDT` · 🇧🇭 `BHD` · 🇧🇳 `BND` · 🇧🇷 `BRL` · 🇨🇦 `CAD` · 🇨🇭 `CHF` · 🇨🇳 `CNH` · 🇨🇳 `CNY` · 🇨🇿 `CZK` · 🇩🇰 `DKK` · 🇪🇬 `EGP` · 🇪🇺 `EUR` · 🇬🇧 `GBP` · 🇬🇭 `GHS` · 🇭🇰 `HKD` · 🇭🇺 `HUF` · 🇮🇩 `IDR` · 🇮🇳 `INR` · 🇮🇷 `IRR` · 🇯🇴 `JOD` · 🇯🇵 `JPY` · 🇰🇪 `KES` · 🇰🇷 `KRW` · 🇰🇼 `KWD` · 🇲🇲 `MMK` · 🇲🇴 `MOP` · 🇲🇺 `MUR` · 🇲🇻 `MVR` · 🇲🇾 `MYR` · 🇳🇬 `NGN` · 🇳🇴 `NOK` · 🇳🇵 `NPR` · 🇳🇿 `NZD` · 🇴🇲 `OMR` · 🇵🇬 `PGK` · 🇵🇭 `PHP` · 🇵🇰 `PKR` · 🇵🇱 `PLN` · 🇶🇦 `QAR` · 🇷🇴 `RON` · 🇷🇺 `RUB` · 🇸🇦 `SAR` · 🇸🇧 `SBD` · 🇸🇨 `SCR` · 🇸🇪 `SEK` · 🇸🇬 `SGD` · 🇹🇭 `THB` · 🇹🇼 `TWD` · 🇺🇸 `USD` · 🇻🇳 `VND` · `XAU` · 🇿🇦 `ZAR` · 🇿🇲 `ZMW`
 
 ## ⚖️ Published vs derived rates
 
@@ -235,6 +235,14 @@ getRate('USD', 'LKR', { apiKey: 'art_live_...' }).then((pair) => console.log(pai
 | `getLatestRates({ apiKey })` | Free | The central bank's full latest published table |
 | `getRatesForDate(date, { apiKey, source?, target? })` | Paid | The official table (or one pair) for a YYYY-MM-DD date |
 | `getHistory({ symbol \| source+target, from?, to? }, { apiKey })` | Paid | Daily series since 2010 |
+
+## 📥 Bulk data (no key)
+
+Need the whole archive rather than an API call? The same published tables are mirrored daily as open data:
+
+- Hugging Face: [AllRates/central-bank-exchange-rates](https://huggingface.co/datasets/AllRates/central-bank-exchange-rates) — one CSV per institution (`rates/cbsl.csv`)
+- Kaggle: [allratestoday/central-bank-exchange-rates](https://www.kaggle.com/datasets/allratestoday/central-bank-exchange-rates)
+- CDN JSON: `https://cdn.jsdelivr.net/gh/AllRates-Today/central-bank-exchange-rates@main/data/cbsl/latest.json`
 
 ## 🔗 Links
 
