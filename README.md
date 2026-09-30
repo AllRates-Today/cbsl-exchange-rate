@@ -85,10 +85,10 @@ const pair = await getRate('USD', 'LKR', { apiKey: 'art_live_...' });
 {
   bank: 'cbsl',
   name: 'Central Bank of Sri Lanka',
-  rate_date: '2026-09-09',   // Central Bank of Sri Lanka's own publication date
+  rate_date: '2026-09-25',   // Central Bank of Sri Lanka's own publication date
   source: 'USD',
   target: 'LKR',
-  rate: 328.7701,
+  rate: 330.3522,
   rate_type: 'indicative',
   derived: false,
   method: 'published',
@@ -113,9 +113,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'cbsl',
   name: 'Central Bank of Sri Lanka',
-  rate_date: '2026-09-09',
+  rate_date: '2026-09-25',
   rates: [
-    { "base": "USD", "quote": "LKR", "type": "indicative", "value": 328.7701 },
+    { "base": "USD", "quote": "LKR", "type": "indicative", "value": 330.3522 },
     // … the rest of the published table (55 currencies vs LKR)
   ],
   disclaimer: '…'
@@ -155,7 +155,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'cbsl-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'LKR', from: '2026-01-01', to: '2026-09-09' },
+  { source: 'USD', target: 'LKR', from: '2026-01-01', to: '2026-09-25' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -168,11 +168,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'LKR',
   from: '2026-01-01',
-  to: '2026-09-09',
+  to: '2026-09-25',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-09-09', rate: 328.7701, rate_type: 'indicative', derived: false, method: 'published' },
+    { date: '2026-09-25', rate: 330.3522, rate_type: 'indicative', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
