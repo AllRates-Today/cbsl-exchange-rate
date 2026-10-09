@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/cbsl-exchange-rate.svg)](https://github.com/AllRates-Today/cbsl-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/cbsl-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![USD/LKR today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fcbsl%3Fsource%3DUSD%26target%3DLKR&query=%24.rate&label=USD%2FLKR%20published%20by%20Central%20Bank%20of%20Sri%20Lanka&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/cbsl/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fcbsl%3Fsource%3DUSD%26target%3DLKR&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/cbsl/)
 
 **Official Central Bank of Sri Lanka (Sri Lanka) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers Central Bank of Sri Lanka itself prints, every business day.**
 
@@ -32,6 +34,73 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full Central Bank of Sri Lanka table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-09** by Central Bank of Sri Lanka — 54 rates. Updated 2026-10-09.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AED | LKR | indicative | 90.1066 |
+| AUD | LKR | indicative | 230.8789 |
+| BDT | LKR | indicative | 2.6921 |
+| BHD | LKR | indicative | 877.5101 |
+| BND | LKR | indicative | 258.6042 |
+| BRL | LKR | indicative | 65.8906 |
+| CAD | LKR | indicative | 232.8748 |
+| CHF | LKR | indicative | 398.557 |
+| CNH | LKR | indicative | 49.4091 |
+| CNY | LKR | indicative | 49.4054 |
+| CZK | LKR | indicative | 15.2426 |
+| DKK | LKR | indicative | 49.7044 |
+| EGP | LKR | indicative | 6.3164 |
+| EUR | LKR | indicative | 371.5045 |
+| GBP | LKR | indicative | 438.2595 |
+| GHS | LKR | indicative | 28.1425 |
+| HKD | LKR | indicative | 42.1736 |
+| HUF | LKR | indicative | 1.0169 |
+| IDR | LKR | indicative | 0.0185 |
+| INR | LKR | indicative | 3.4195 |
+| JOD | LKR | indicative | 466.9324 |
+| JPY | LKR | indicative | 2.0943 |
+| KES | LKR | indicative | 2.5492 |
+| KRW | LKR | indicative | 0.2467 |
+| KWD | LKR | indicative | 1064.5963 |
+| MMK | LKR | indicative | 0.1575 |
+| MOP | LKR | indicative | 40.9454 |
+| MUR | LKR | indicative | 6.9662 |
+| MVR | LKR | indicative | 21.4476 |
+| MYR | LKR | indicative | 80.9494 |
+| NGN | LKR | indicative | 0.2485 |
+| NOK | LKR | indicative | 34.6466 |
+| NPR | LKR | indicative | 2.1378 |
+| NZD | LKR | indicative | 185.8681 |
+| OMR | LKR | indicative | 859.6185 |
+| PGK | LKR | indicative | 74.0361 |
+| PHP | LKR | indicative | 5.2677 |
+| PKR | LKR | indicative | 1.194 |
+| PLN | LKR | indicative | 84.8729 |
+| QAR | LKR | indicative | 90.7938 |
+| RON | LKR | indicative | 69.5079 |
+| RUB | LKR | indicative | 3.8796 |
+| SAR | LKR | indicative | 88.1577 |
+| SBD | LKR | indicative | 41.2709 |
+| SCR | LKR | indicative | 23.1995 |
+| SEK | LKR | indicative | 33.2404 |
+| SGD | LKR | indicative | 258.6042 |
+| THB | LKR | indicative | 9.8544 |
+| TWD | LKR | indicative | 10.3626 |
+| USD | LKR | indicative | 330.9617 |
+| VND | LKR | indicative | 0.0128 |
+| XAU | LKR | indicative | 1380514.0623 |
+| ZAR | LKR | indicative | 20.0144 |
+| ZMW | LKR | indicative | 16.5971 |
+
+Source: [Official rates published by CBSL, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/cbsl/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
