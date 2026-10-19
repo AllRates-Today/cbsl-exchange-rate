@@ -33,73 +33,76 @@ const r = await fetch('https://allratestoday.com/api/open/central-bank/cbsl').th
 console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
 ```
 
-The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables and history.
 
 ## 📈 Latest published table
 
 [![Latest Central Bank of Sri Lanka table](https://allratestoday.com/api/open/central-bank/cbsl/table.svg)](https://allratestoday.com/central-bank-rates-api/cbsl/)
 
-The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
+The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-16** by Central Bank of Sri Lanka — 54 rates. Updated 2026-10-16.
+<details>
+<summary>Table as text: published 2026-10-19 by Central Bank of Sri Lanka — 54 rates. Updated 2026-10-19.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | LKR | indicative | 90.1949 |
-| AUD | LKR | indicative | 229.4156 |
-| BDT | LKR | indicative | 2.6872 |
-| BHD | LKR | indicative | 877.3696 |
-| BND | LKR | indicative | 258.3328 |
-| BRL | LKR | indicative | 65.0039 |
-| CAD | LKR | indicative | 233.448 |
-| CHF | LKR | indicative | 400.3456 |
-| CNH | LKR | indicative | 49.5129 |
-| CNY | LKR | indicative | 49.5077 |
-| CZK | LKR | indicative | 15.2668 |
-| DKK | LKR | indicative | 49.7113 |
-| EGP | LKR | indicative | 6.1958 |
-| EUR | LKR | indicative | 371.6035 |
-| GBP | LKR | indicative | 439.8816 |
-| GHS | LKR | indicative | 28.4801 |
-| HKD | LKR | indicative | 42.2144 |
-| HUF | LKR | indicative | 1.0206 |
+| AED | LKR | indicative | 90.1922 |
+| AUD | LKR | indicative | 230.9326 |
+| BDT | LKR | indicative | 2.6845 |
+| BHD | LKR | indicative | 876.9718 |
+| BND | LKR | indicative | 258.9511 |
+| BRL | LKR | indicative | 65.4334 |
+| CAD | LKR | indicative | 234.648 |
+| CHF | LKR | indicative | 401.8878 |
+| CNH | LKR | indicative | 49.5752 |
+| CNY | LKR | indicative | 49.5715 |
+| CZK | LKR | indicative | 15.2839 |
+| DKK | LKR | indicative | 49.7561 |
+| EGP | LKR | indicative | 6.1978 |
+| EUR | LKR | indicative | 371.9237 |
+| GBP | LKR | indicative | 441.5579 |
+| GHS | LKR | indicative | 28.4856 |
+| HKD | LKR | indicative | 42.2137 |
+| HUF | LKR | indicative | 1.0242 |
 | IDR | LKR | indicative | 0.0183 |
-| INR | LKR | indicative | 3.4852 |
-| JOD | LKR | indicative | 467.2581 |
-| JPY | LKR | indicative | 2.0962 |
-| KES | LKR | indicative | 2.5523 |
-| KRW | LKR | indicative | 0.2462 |
-| KWD | LKR | indicative | 1065.4338 |
+| INR | LKR | indicative | 3.4887 |
+| JOD | LKR | indicative | 467.3101 |
+| JPY | LKR | indicative | 2.0975 |
+| KES | LKR | indicative | 2.5508 |
+| KRW | LKR | indicative | 0.249 |
+| KWD | LKR | indicative | 1065.5734 |
 | MMK | LKR | indicative | 0.1575 |
-| MOP | LKR | indicative | 40.985 |
-| MUR | LKR | indicative | 6.9928 |
-| MVR | LKR | indicative | 21.6086 |
-| MYR | LKR | indicative | 81.1379 |
-| NGN | LKR | indicative | 0.2488 |
-| NOK | LKR | indicative | 34.9879 |
-| NPR | LKR | indicative | 2.1778 |
-| NZD | LKR | indicative | 186.6797 |
-| OMR | LKR | indicative | 860.4384 |
-| PGK | LKR | indicative | 73.6449 |
-| PHP | LKR | indicative | 5.2531 |
-| PKR | LKR | indicative | 1.1957 |
-| PLN | LKR | indicative | 85.004 |
-| QAR | LKR | indicative | 90.8678 |
-| RON | LKR | indicative | 69.6579 |
-| RUB | LKR | indicative | 3.9463 |
-| SAR | LKR | indicative | 88.2747 |
-| SBD | LKR | indicative | 41.3114 |
-| SCR | LKR | indicative | 22.9486 |
-| SEK | LKR | indicative | 33.2911 |
-| SGD | LKR | indicative | 258.3328 |
-| THB | LKR | indicative | 9.8812 |
-| TWD | LKR | indicative | 10.1937 |
-| USD | LKR | indicative | 331.286 |
+| MOP | LKR | indicative | 40.9838 |
+| MUR | LKR | indicative | 7.0068 |
+| MVR | LKR | indicative | 21.4666 |
+| MYR | LKR | indicative | 81.1852 |
+| NGN | LKR | indicative | 0.2487 |
+| NOK | LKR | indicative | 35.1438 |
+| NPR | LKR | indicative | 2.1811 |
+| NZD | LKR | indicative | 187.3366 |
+| OMR | LKR | indicative | 860.4127 |
+| PGK | LKR | indicative | 73.3777 |
+| PHP | LKR | indicative | 5.2501 |
+| PKR | LKR | indicative | 1.1958 |
+| PLN | LKR | indicative | 85.0866 |
+| QAR | LKR | indicative | 90.8626 |
+| RON | LKR | indicative | 69.8512 |
+| RUB | LKR | indicative | 3.9678 |
+| SAR | LKR | indicative | 88.2744 |
+| SBD | LKR | indicative | 41.3101 |
+| SCR | LKR | indicative | 22.8345 |
+| SEK | LKR | indicative | 33.4214 |
+| SGD | LKR | indicative | 258.9511 |
+| THB | LKR | indicative | 9.8959 |
+| TWD | LKR | indicative | 10.1865 |
+| USD | LKR | indicative | 331.2761 |
 | VND | LKR | indicative | 0.0128 |
-| XAU | LKR | indicative | 1378729.5105 |
-| ZAR | LKR | indicative | 20.0837 |
-| ZMW | LKR | indicative | 16.5654 |
+| XAU | LKR | indicative | 1381779.1152 |
+| ZAR | LKR | indicative | 20.1237 |
+| ZMW | LKR | indicative | 16.518 |
+
+</details>
 
 Source: [Official rates published by CBSL, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/cbsl/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
@@ -373,7 +376,8 @@ Need the whole archive rather than an API call? The same published tables are mi
 - [All central bank sources](https://allratestoday.com/central-bank-rates-api/)
 - [Package docs on the site](https://allratestoday.com/docs/sdk/cbsl-exchange-rate/) · [ERP integration guides](https://allratestoday.com/docs/integrations/)
 - [API documentation](https://allratestoday.com/docs/#central-bank) · [Interactive reference](https://allratestoday.com/api-reference/) · [Methodology](https://allratestoday.com/official-rates-methodology/)
-- [Register (free)](https://allratestoday.com/register) · [Pricing](https://allratestoday.com/pricing/)
+- [Register (Free)](https://allratestoday.com/register) · [Dashboard](https://allratestoday.com/profile) · [Pricing](https://allratestoday.com/pricing/)
+- [Status](https://allratestoday.com/status)
 - [GitHub](https://github.com/AllRates-Today/cbsl-exchange-rate)
 
 ## 📜 License
