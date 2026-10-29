@@ -47,64 +47,64 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-28 by Central Bank of Sri Lanka — 54 rates. Updated 2026-10-28.</summary>
+<summary>Table as text: published 2026-10-29 by Central Bank of Sri Lanka — 54 rates. Updated 2026-10-29.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | LKR | indicative | 90.5003 |
-| AUD | LKR | indicative | 233.7823 |
-| BDT | LKR | indicative | 2.6827 |
-| BHD | LKR | indicative | 881.1335 |
-| BND | LKR | indicative | 259.3085 |
-| BRL | LKR | indicative | 62.1671 |
-| CAD | LKR | indicative | 236.3871 |
-| CHF | LKR | indicative | 400.5393 |
-| CNH | LKR | indicative | 49.8616 |
-| CNY | LKR | indicative | 49.8504 |
-| CZK | LKR | indicative | 15.1985 |
-| DKK | LKR | indicative | 49.4669 |
-| EGP | LKR | indicative | 5.9232 |
-| EUR | LKR | indicative | 369.737 |
-| GBP | LKR | indicative | 442.1353 |
-| GHS | LKR | indicative | 28.5301 |
-| HKD | LKR | indicative | 42.3757 |
-| HUF | LKR | indicative | 1.0076 |
+| AED | LKR | indicative | 90.5228 |
+| AUD | LKR | indicative | 234.5719 |
+| BDT | LKR | indicative | 2.6841 |
+| BHD | LKR | indicative | 881.1191 |
+| BND | LKR | indicative | 259.7175 |
+| BRL | LKR | indicative | 62.1477 |
+| CAD | LKR | indicative | 237.9009 |
+| CHF | LKR | indicative | 401.801 |
+| CNH | LKR | indicative | 49.9242 |
+| CNY | LKR | indicative | 49.9055 |
+| CZK | LKR | indicative | 15.222 |
+| DKK | LKR | indicative | 49.6217 |
+| EGP | LKR | indicative | 5.9235 |
+| EUR | LKR | indicative | 370.8597 |
+| GBP | LKR | indicative | 443.1763 |
+| GHS | LKR | indicative | 28.5802 |
+| HKD | LKR | indicative | 42.3814 |
+| HUF | LKR | indicative | 1.0109 |
 | IDR | LKR | indicative | 0.0183 |
-| INR | LKR | indicative | 3.4947 |
-| JOD | LKR | indicative | 468.8401 |
-| JPY | LKR | indicative | 2.1046 |
-| KES | LKR | indicative | 2.558 |
-| KRW | LKR | indicative | 0.2485 |
-| KWD | LKR | indicative | 1068.1821 |
-| MMK | LKR | indicative | 0.1583 |
-| MOP | LKR | indicative | 41.1416 |
-| MUR | LKR | indicative | 7.0202 |
-| MVR | LKR | indicative | 21.73 |
-| MYR | LKR | indicative | 81.3867 |
-| NGN | LKR | indicative | 0.2458 |
-| NOK | LKR | indicative | 35.6255 |
-| NPR | LKR | indicative | 2.185 |
-| NZD | LKR | indicative | 186.3477 |
-| OMR | LKR | indicative | 863.3739 |
-| PGK | LKR | indicative | 74.2266 |
-| PHP | LKR | indicative | 5.1898 |
+| INR | LKR | indicative | 3.4914 |
+| JOD | LKR | indicative | 469.0229 |
+| JPY | LKR | indicative | 2.1088 |
+| KES | LKR | indicative | 2.5586 |
+| KRW | LKR | indicative | 0.2493 |
+| KWD | LKR | indicative | 1068.9632 |
+| MMK | LKR | indicative | 0.1582 |
+| MOP | LKR | indicative | 41.1467 |
+| MUR | LKR | indicative | 6.9908 |
+| MVR | LKR | indicative | 21.5114 |
+| MYR | LKR | indicative | 81.8377 |
+| NGN | LKR | indicative | 0.2466 |
+| NOK | LKR | indicative | 35.9573 |
+| NPR | LKR | indicative | 2.1828 |
+| NZD | LKR | indicative | 186.926 |
+| OMR | LKR | indicative | 863.5887 |
+| PGK | LKR | indicative | 73.5469 |
+| PHP | LKR | indicative | 5.2094 |
 | PKR | LKR | indicative | 1.2001 |
-| PLN | LKR | indicative | 84.0241 |
-| QAR | LKR | indicative | 91.1855 |
-| RON | LKR | indicative | 69.1119 |
-| RUB | LKR | indicative | 4.1293 |
-| SAR | LKR | indicative | 88.5547 |
-| SBD | LKR | indicative | 41.5177 |
-| SCR | LKR | indicative | 23.0129 |
-| SEK | LKR | indicative | 33.3947 |
-| SGD | LKR | indicative | 259.3085 |
-| THB | LKR | indicative | 9.8232 |
-| TWD | LKR | indicative | 10.2449 |
-| USD | LKR | indicative | 332.4076 |
+| PLN | LKR | indicative | 84.275 |
+| QAR | LKR | indicative | 91.2082 |
+| RON | LKR | indicative | 69.315 |
+| RUB | LKR | indicative | 4.1311 |
+| SAR | LKR | indicative | 88.6074 |
+| SBD | LKR | indicative | 41.395 |
+| SCR | LKR | indicative | 23.2514 |
+| SEK | LKR | indicative | 33.5859 |
+| SGD | LKR | indicative | 259.7175 |
+| THB | LKR | indicative | 9.8603 |
+| TWD | LKR | indicative | 10.2339 |
+| USD | LKR | indicative | 332.4903 |
 | VND | LKR | indicative | 0.0129 |
-| XAU | LKR | indicative | 1344568.7975 |
-| ZAR | LKR | indicative | 19.9408 |
-| ZMW | LKR | indicative | 16.4215 |
+| XAU | LKR | indicative | 1345372.1254 |
+| ZAR | LKR | indicative | 20.0121 |
+| ZMW | LKR | indicative | 16.4319 |
 
 </details>
 
@@ -269,6 +269,7 @@ The Central Bank of Sri Lanka is Sri Lanka's monetary authority. It publishes da
 
 - Publisher's own page: [Daily indicative exchange rates](https://www.cbsl.gov.lk/cbsl_custom/exrates/exrates.php) · [www.cbsl.gov.lk](https://www.cbsl.gov.lk)
 - Publication: every business day; the exact schedule, freshness status and any current delay are on the [Central Bank of Sri Lanka rates page](https://allratestoday.com/central-bank-rates-api/cbsl/)
+- In the API: usually by **05:15 UTC** (measured over the last 11 publications). Schedule a sync at or after that time and retry hourly until `rate_date` moves; every response carries the same figure as `available_by_utc` — see [when to poll](https://allratestoday.com/docs/#when-to-poll)
 - Values are stored unmodified, with the publisher's own `rate_date` on every row — see the [methodology](https://allratestoday.com/official-rates-methodology/)
 
 ## 🧭 Reading the numbers
