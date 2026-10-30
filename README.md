@@ -24,87 +24,72 @@
 
 Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required. Latest rates are on every plan, including free.
 
-## ⚡ Try it without a key
-
-The latest Central Bank of Sri Lanka table is also served keyless, CORS-open and edge-cached, for evaluation, embeds and AI agents:
-
-```bash
-curl "https://allratestoday.com/api/open/central-bank/cbsl?source=USD&target=LKR"
-```
-
-```js
-const r = await fetch('https://allratestoday.com/api/open/central-bank/cbsl').then((x) => x.json());
-console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
-```
-
-The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and is free to use with a visible, followable link where the rates are shown: `<a href="https://allratestoday.com">Exchange rates by AllRatesToday</a>` (terms: <https://allratestoday.com/terms/#attribution>). The client below uses the keyed API, which adds point-in-time tables and history; with a key the link is appreciated, not required.
-
 ## 📈 Latest published table
 
 [![Latest Central Bank of Sri Lanka table](https://allratestoday.com/api/open/central-bank/cbsl/table.svg)](https://allratestoday.com/central-bank-rates-api/cbsl/)
 
-The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
+The image is rendered live from the keyless endpoint, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-29 by Central Bank of Sri Lanka — 54 rates. Updated 2026-10-29.</summary>
+<summary>Table as text: published 2026-10-30 by Central Bank of Sri Lanka — 54 rates. Updated 2026-10-30.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | LKR | indicative | 90.5228 |
-| AUD | LKR | indicative | 234.5719 |
-| BDT | LKR | indicative | 2.6841 |
-| BHD | LKR | indicative | 881.1191 |
-| BND | LKR | indicative | 259.7175 |
-| BRL | LKR | indicative | 62.1477 |
-| CAD | LKR | indicative | 237.9009 |
-| CHF | LKR | indicative | 401.801 |
-| CNH | LKR | indicative | 49.9242 |
-| CNY | LKR | indicative | 49.9055 |
-| CZK | LKR | indicative | 15.222 |
-| DKK | LKR | indicative | 49.6217 |
-| EGP | LKR | indicative | 5.9235 |
-| EUR | LKR | indicative | 370.8597 |
-| GBP | LKR | indicative | 443.1763 |
-| GHS | LKR | indicative | 28.5802 |
-| HKD | LKR | indicative | 42.3814 |
-| HUF | LKR | indicative | 1.0109 |
-| IDR | LKR | indicative | 0.0183 |
-| INR | LKR | indicative | 3.4914 |
-| JOD | LKR | indicative | 469.0229 |
-| JPY | LKR | indicative | 2.1088 |
-| KES | LKR | indicative | 2.5586 |
-| KRW | LKR | indicative | 0.2493 |
-| KWD | LKR | indicative | 1068.9632 |
-| MMK | LKR | indicative | 0.1582 |
-| MOP | LKR | indicative | 41.1467 |
-| MUR | LKR | indicative | 6.9908 |
-| MVR | LKR | indicative | 21.5114 |
-| MYR | LKR | indicative | 81.8377 |
-| NGN | LKR | indicative | 0.2466 |
-| NOK | LKR | indicative | 35.9573 |
-| NPR | LKR | indicative | 2.1828 |
-| NZD | LKR | indicative | 186.926 |
-| OMR | LKR | indicative | 863.5887 |
-| PGK | LKR | indicative | 73.5469 |
-| PHP | LKR | indicative | 5.2094 |
-| PKR | LKR | indicative | 1.2001 |
-| PLN | LKR | indicative | 84.275 |
-| QAR | LKR | indicative | 91.2082 |
-| RON | LKR | indicative | 69.315 |
-| RUB | LKR | indicative | 4.1311 |
-| SAR | LKR | indicative | 88.6074 |
-| SBD | LKR | indicative | 41.395 |
-| SCR | LKR | indicative | 23.2514 |
-| SEK | LKR | indicative | 33.5859 |
-| SGD | LKR | indicative | 259.7175 |
-| THB | LKR | indicative | 9.8603 |
-| TWD | LKR | indicative | 10.2339 |
-| USD | LKR | indicative | 332.4903 |
+| AED | LKR | indicative | 90.5556 |
+| AUD | LKR | indicative | 233.9583 |
+| BDT | LKR | indicative | 2.6805 |
+| BHD | LKR | indicative | 881.4846 |
+| BND | LKR | indicative | 260.218 |
+| BRL | LKR | indicative | 61.8212 |
+| CAD | LKR | indicative | 238.1233 |
+| CHF | LKR | indicative | 405.03 |
+| CNH | LKR | indicative | 49.9791 |
+| CNY | LKR | indicative | 49.9468 |
+| CZK | LKR | indicative | 15.3017 |
+| DKK | LKR | indicative | 49.8323 |
+| EGP | LKR | indicative | 5.9324 |
+| EUR | LKR | indicative | 372.4241 |
+| GBP | LKR | indicative | 445.4986 |
+| GHS | LKR | indicative | 28.562 |
+| HKD | LKR | indicative | 42.3972 |
+| HUF | LKR | indicative | 1.0179 |
+| IDR | LKR | indicative | 0.0184 |
+| INR | LKR | indicative | 3.4917 |
+| JOD | LKR | indicative | 468.928 |
+| JPY | LKR | indicative | 2.1121 |
+| KES | LKR | indicative | 2.5597 |
+| KRW | LKR | indicative | 0.2484 |
+| KWD | LKR | indicative | 1068.3538 |
+| MMK | LKR | indicative | 0.1584 |
+| MOP | LKR | indicative | 41.1621 |
+| MUR | LKR | indicative | 7.006 |
+| MVR | LKR | indicative | 21.6971 |
+| MYR | LKR | indicative | 82.187 |
+| NGN | LKR | indicative | 0.2469 |
+| NOK | LKR | indicative | 36.0737 |
+| NPR | LKR | indicative | 2.1827 |
+| NZD | LKR | indicative | 187.3596 |
+| OMR | LKR | indicative | 863.9012 |
+| PGK | LKR | indicative | 74.0724 |
+| PHP | LKR | indicative | 5.225 |
+| PKR | LKR | indicative | 1.2003 |
+| PLN | LKR | indicative | 84.8756 |
+| QAR | LKR | indicative | 91.2362 |
+| RON | LKR | indicative | 69.775 |
+| RUB | LKR | indicative | 4.0937 |
+| SAR | LKR | indicative | 88.6323 |
+| SBD | LKR | indicative | 41.5431 |
+| SCR | LKR | indicative | 23.192 |
+| SEK | LKR | indicative | 33.8563 |
+| SGD | LKR | indicative | 260.218 |
+| THB | LKR | indicative | 9.8639 |
+| TWD | LKR | indicative | 10.184 |
+| USD | LKR | indicative | 332.6106 |
 | VND | LKR | indicative | 0.0129 |
-| XAU | LKR | indicative | 1345372.1254 |
-| ZAR | LKR | indicative | 20.0121 |
-| ZMW | LKR | indicative | 16.4319 |
+| XAU | LKR | indicative | 1332002.3437 |
+| ZAR | LKR | indicative | 20.0157 |
+| ZMW | LKR | indicative | 16.4128 |
 
 </details>
 
