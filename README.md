@@ -31,69 +31,7 @@ Get a free API key at [allratestoday.com/register](https://allratestoday.com/reg
 The image is rendered live from the keyless endpoint, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-<details>
-<summary>Table as text: published 2026-11-13 by Central Bank of Sri Lanka — 54 rates. Updated 2026-11-13.</summary>
-
-| Base | Quote | Type | Rate |
-| --- | --- | --- | ---: |
-| AED | LKR | indicative | 90.5259 |
-| AUD | LKR | indicative | 226.467 |
-| BDT | LKR | indicative | 2.6674 |
-| BHD | LKR | indicative | 881.6169 |
-| BND | LKR | indicative | 258.4345 |
-| BRL | LKR | indicative | 58.9594 |
-| CAD | LKR | indicative | 233.2037 |
-| CHF | LKR | indicative | 398.0627 |
-| CNH | LKR | indicative | 49.8496 |
-| CNY | LKR | indicative | 49.8474 |
-| CZK | LKR | indicative | 15.0816 |
-| DKK | LKR | indicative | 49.1888 |
-| EGP | LKR | indicative | 6.2229 |
-| EUR | LKR | indicative | 367.7137 |
-| GBP | LKR | indicative | 440.0661 |
-| GHS | LKR | indicative | 28.3705 |
-| HKD | LKR | indicative | 42.3877 |
-| HUF | LKR | indicative | 1.0068 |
-| IDR | LKR | indicative | 0.0182 |
-| INR | LKR | indicative | 3.5357 |
-| JOD | LKR | indicative | 469.0391 |
-| JPY | LKR | indicative | 2.0793 |
-| KES | LKR | indicative | 2.5587 |
-| KRW | LKR | indicative | 0.2494 |
-| KWD | LKR | indicative | 1067.6957 |
-| MMK | LKR | indicative | 0.1582 |
-| MOP | LKR | indicative | 41.1527 |
-| MUR | LKR | indicative | 6.9943 |
-| MVR | LKR | indicative | 21.7726 |
-| MYR | LKR | indicative | 81.4197 |
-| NGN | LKR | indicative | 0.2453 |
-| NOK | LKR | indicative | 34.7751 |
-| NPR | LKR | indicative | 2.2105 |
-| NZD | LKR | indicative | 184.3057 |
-| OMR | LKR | indicative | 863.5962 |
-| PGK | LKR | indicative | 74.0482 |
-| PHP | LKR | indicative | 5.2092 |
-| PKR | LKR | indicative | 1.201 |
-| PLN | LKR | indicative | 83.4907 |
-| QAR | LKR | indicative | 91.2113 |
-| RON | LKR | indicative | 68.774 |
-| RUB | LKR | indicative | 4.0164 |
-| SAR | LKR | indicative | 88.5939 |
-| SBD | LKR | indicative | 41.3965 |
-| SCR | LKR | indicative | 23.3646 |
-| SEK | LKR | indicative | 33.1732 |
-| SGD | LKR | indicative | 258.4345 |
-| THB | LKR | indicative | 9.8176 |
-| TWD | LKR | indicative | 10.1089 |
-| USD | LKR | indicative | 332.5018 |
-| VND | LKR | indicative | 0.013 |
-| XAU | LKR | indicative | 1298811.8811 |
-| ZAR | LKR | indicative | 19.8441 |
-| ZMW | LKR | indicative | 16.2134 |
-
-</details>
-
-Source: [Official rates published by CBSL, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/cbsl/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+_The table is filled in by the daily workflow._
 <!-- daily-table:end -->
 
 ## 📦 Installation
